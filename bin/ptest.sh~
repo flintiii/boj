@@ -1,0 +1,3 @@
+cat humcaudio.dir |\ 
+      grep -v New |\ 
+      grep -v Formatting

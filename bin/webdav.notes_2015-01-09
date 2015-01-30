@@ -1,0 +1,52 @@
+2015-01-09 12:31:54 
+
+ curl -T <upload_file> http://<user>:<pass>@host/site/<dest-file>
+ 
+
+curl -T test.tdl http://katy:coppinger@docbox.flint.com/test.tdl
+
+worked ok...  curl -T test.tdl http://katy:coppinger@docbox.flint.com:1980/test.tdl
+
+ 
+Worked ok... curl -T test.tdl http://the:end@docbox.flint.com:1980/test.tdl
+
+curl -X COPY http://the:end@docbox.flint.com:1980/test.tdl banana.tdl
+
+apt-cache search davfs2
+davfs2 - mount a WebDAV resource as a regular file system
+
+
+sudo mount -t davfs http://webdav.example.com/directory /mnt/
+
+sudo mount -t davfs http://the:end@docbox.flint.com:1980/ test/
+
+If you mount as root, only the system wide configuration file is used. Please see 'man mount.davfs' and 'man davfs2.conf'.
+
+sudo mount -t davfs http://docbox.flint.com:1980/ test/
+
+mount     -t      davfs      -o      uid=otto,gid=users,mode=775  http://docbox.flint.com:1980/ test/
+
+ mount.davfs            -o            uid=otto,gid=users,mode=775             http://linux.org.ar/repos/ /dav
+            
+mount.davfs  -t  http://docbox.flint.com:1980/ test/   uid=the,gid=the,mode=775         
+
+
+sudo mount -t davfs http://docbox.flint.com:1980/ test/
+sudo umount test
+
+/etc/davfs2/secrets works...
+
+-o uid=flint,gid=flint,mode=775
+sudo mount -t davfs http://docbox.flint.com:1980/ test/ -o mode=777
+             
+sudo mount -t davfs http://docbox.flint.com:1980/ test/ -o rw,mode=777  
+
+sudo mount -t davfs http://docbox.flint.com:1980/ test/ -o rw
+echo "hello" > test/world        
+sudo umount test
+
+
+cadaver does it with move...
+
+cadaver http://docbox.flint.com:1980/
+

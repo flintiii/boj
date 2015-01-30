@@ -1,0 +1,8 @@
+<!-- This is a comment in pyx-->
+<books>
+<book type="hardback">
+<title>Atlas Shrugged</title>
+<author>Ayn Rand</author>
+<isbn id="1">0525934189</isbn>
+</book>
+</books>

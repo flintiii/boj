@@ -1,0 +1,97 @@
+
+Starting Nmap 6.40 ( http://nmap.org ) at 2014-12-10 12:22 EST
+Nmap scan report for 10.10.10.1
+Host is up (0.0033s latency).
+All 1000 scanned ports on 10.10.10.1 are filtered
+MAC Address: 00:07:0E:7E:F2:8E (Cisco Systems)
+
+Nmap scan report for 10.10.10.2
+Host is up (0.015s latency).
+Not shown: 995 filtered ports
+PORT      STATE  SERVICE
+22/tcp    open   ssh
+80/tcp    closed http
+443/tcp   open   https
+1000/tcp  closed cadlock
+16113/tcp open   unknown
+MAC Address: B0:FA:EB:8C:53:44 (Cisco)
+
+Nmap scan report for 10.10.10.117
+Host is up (0.029s latency).
+Not shown: 987 filtered ports
+PORT      STATE  SERVICE
+139/tcp   open   netbios-ssn
+445/tcp   open   microsoft-ds
+554/tcp   open   rtsp
+2869/tcp  open   icslap
+5357/tcp  open   wsdapi
+10243/tcp open   unknown
+16992/tcp closed amt-soap-http
+49152/tcp open   unknown
+49153/tcp open   unknown
+49154/tcp open   unknown
+49155/tcp open   unknown
+49158/tcp open   unknown
+55555/tcp closed unknown
+MAC Address: AC:7B:A1:50:A8:F7 (Intel Corporate)
+
+Nmap scan report for 10.10.10.118
+Host is up (0.013s latency).
+Not shown: 992 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+3389/tcp  open  ms-wbt-server
+5357/tcp  open  wsdapi
+49152/tcp open  unknown
+49153/tcp open  unknown
+49154/tcp open  unknown
+MAC Address: A4:17:31:A5:C0:68 (Hon Hai Precision Ind. Co.)
+
+Nmap scan report for 10.10.10.126
+Host is up (0.070s latency).
+Not shown: 998 filtered ports
+PORT     STATE SERVICE
+2869/tcp open  icslap
+5357/tcp open  wsdapi
+MAC Address: 08:11:96:7C:52:B8 (Intel Corporate)
+
+Nmap scan report for 10.10.10.129
+Host is up (0.065s latency).
+All 1000 scanned ports on 10.10.10.129 are closed
+MAC Address: 64:76:BA:AA:C5:46 (Unknown)
+
+Nmap scan report for 10.10.10.130
+Host is up (0.051s latency).
+Not shown: 839 closed ports, 158 filtered ports
+PORT    STATE SERVICE
+135/tcp open  msrpc
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+MAC Address: 00:16:CF:68:CD:4D (Hon Hai Precision Ind. Co.)
+
+Nmap scan report for 10.10.10.131
+Host is up (0.036s latency).
+All 1000 scanned ports on 10.10.10.131 are closed
+MAC Address: 10:40:F3:AC:DE:6C (Apple)
+
+Nmap scan report for 10.10.10.132
+Host is up (0.041s latency).
+Not shown: 994 closed ports
+PORT     STATE SERVICE
+80/tcp   open  http
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+515/tcp  open  printer
+631/tcp  open  ipp
+9100/tcp open  jetdirect
+MAC Address: B0:E8:92:0B:14:5E (Seiko Epson)
+
+Nmap scan report for 10.10.10.178
+Host is up (0.0000070s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+
+Nmap done: 256 IP addresses (10 hosts up) scanned in 3681.04 seconds

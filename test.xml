@@ -1,0 +1,24 @@
+<office:text>
+      <office:forms form:automatic-focus="false" form:apply-design-mode="false"/>
+      <text:sequence-decls>
+        <text:sequence-decl text:display-outline-level="0" text:name="Illustration"/>
+        <text:sequence-decl text:display-outline-level="0" text:name="Table"/>
+        <text:sequence-decl text:display-outline-level="0" text:name="Text"/>
+        <text:sequence-decl text:display-outline-level="0" text:name="Drawing"/>
+      </text:sequence-decls>
+      <text:p text:style-name="P2">PROGRAM PLANNING AND PROPOSAL WRIRING</text:p>
+      <text:list xml:id="list6309700949849434465" text:style-name="WW8Num3">
+        <text:list-item>
+          <text:h text:style-name="Heading_20_1" text:outline-level="1">Heading 1</text:h>
+        </text:list-item>
+      </text:list>
+        <text:p text:style-name="P1">Text under heading 1</text:p>
+        <text:list xml:id="list164202752164137" text:continue-numbering="true" text:style-name="WW8Num3">
+		<text:list-item>
+<text:h text:style-name="Heading_20_1" text:outline-level="1">Heading 1</text:h>
+</text:list-item>
+        </text:list>
+      <text:p text:style-name="P1">Text under heading 2</text:p>
+    </office:text>
+  </office:body>
+</office:document-content>

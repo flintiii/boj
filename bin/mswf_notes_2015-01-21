@@ -1,0 +1,5 @@
+libreoffice test6.odf 
+:1: parser error : Document is empty
+
+^
+
