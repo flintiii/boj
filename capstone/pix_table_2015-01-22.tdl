@@ -1,0 +1,6 @@
+| {{{PYX prefix character}}} | {{{XmlNodeType value}}} |
+| ( | {{{Element}}} |
+| ) | {{{EndElement}}} |
+| A | {{{Attribute}}} |
+| - | {{{Text}}} |
+| ? | {{{ProcessingInstruction}}} |

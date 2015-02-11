@@ -2,15 +2,53 @@
 # Wed 21 Jan 2015 07:17:44 AM EST Microsoft Word Filter for Grant Generator  
 # Note change in evaluation of ARG!
 # 
-version="0.04"
+version="0.07"
 #
 # next lines run ballisticly
 #* hold environment
 S=$PWD
 # echo "This is the path "$S
-#t
+#
+#
+#* function help  - Help function for template basic help goes here
+function help(){
+clear;
+echo "This is the \""$FUNCNAME"\" function in "$0" version "$version; uroot #debug 
+cat $0 | grep '^## ' | sed -e 's/##//'
+# echo "This is the help function"
+##                       *****DOCUMENTATION*****
+## You get this when you put in the wrong number or type of arguments...
+## The name of this program is mswf.sh, a tiddle based proposal generator.
+## This is released under GPL I
+## The syntax is:
+##  - mswf.sh ounzip <folder>  <filename>  - Blows open an odt
+##  - mswf.sh ozip   <folder> <filename> - makes odt
+##  - mswf.sh val    <folder> validates content of xml or pyx
+##  - mswf.sh inst   <folder> <filename> - puts filename in content.
+##  - mswf.sh tpyx   <folder> <destfn.odt> <target.pyx> tests document
+##  - mswf.sh gpyx   <folder> <filename.pyx> gets pyx out as filename.pyx 
+##  - mswf.sh pdfit  <filename>.odt converts to filename.pdf, tests
+##  - mswf.sh 
+##    in all of these, Output is delivered to the screen...
+##      *** NOTE *** This program need not be run as root!
+##
+## For structure information type "grep '^\#\*' mswf.sh"
+##    :^)
+## (C) P Flint, Barre Open Systems Institute Liscensed under GPLI
+##
+#          *****Documentation Loop ends here the rest is function******
+#
+} # Test: mswf.sh
+#
+#* function dummy - Rename and fill stuff in between braces
+function dummy(){
+echo "This is the \""$FUNCNAME"\" function in "$0" version "$version #debug
+uroot
+} # Test:
+#
+#
 #* check location of vital files and programs, sanity check
-for prog in curl expect cadaver xmlstarlet git xsltproc unoconv # debug banana
+for prog in curl expect cadaver xmlstarlet git unoconv # debug banana xsltproc
 do
 # echo $prog
 isit=$(which $prog)
@@ -34,44 +72,7 @@ done
 #
 # above runs ballisticly
 #
-#* function help  - Help function for template basic help goes here
-function help(){
-clear;
-echo "This is the \""$FUNCNAME"\" function in "$0" version "$version; uroot #debug 
-cat $0 | grep '^## ' | sed -e 's/##//'
-# echo "This is the help function"
-##                       *****DOCUMENTATION*****
-## You get this when you put in the wrong number or type of arguments...
-## The name of this program is mswf.sh, a tiddle based proposal generator.
-## This is released under GPL I
-## The syntax is:
-##  - mswf.sh ounzip <folder>  <filename>  - Blows open an odf
-##  - mswf.sh ozip   <folder> <filename> - makes odf 
-##  - mswf.sh val    <folder> validates content.of xml
-##  - mswf.sh inst   <folder> <filename> - puts filename in content.
-##  - mswf.sh tpyx   <folder> <destfn.odt> <target.pyx> tests content.xml
-##  - mswf.sh gpyx   <folder> <filename.pyx> gets pyx out as filename.pyx 
-##  - mswf.sh pdfit  <filename>.odt converts to filename.pdf, tests
-##  - mswf.sh 
-##    in all of these, Output is delivered to the screen...
-##      *** NOTE *** This program need not be run as root!
-##
-## For structure information type "grep '^\#\*' mswf.sh"
-##    :^)
-## (C) P Flint, Barre Open Systems Institute Liscensed under GPLI
-##
-#          *****Documentation Loop ends here the rest is function******
-#
-} # Test: mswf.sh
-#
-#* function dummy - Rename and fill stuff in between braces
-function dummy(){
-echo "This is the \""$FUNCNAME"\" function in "$0" version "$version #debug
-uroot
-} # Test:
-#
-#
-#* function ounzip - ounzip <folder>  <filename>  - Blows open an odf.
+#* function ounzip - ounzip <folder>  <filename>  - Blows open an odt
 function ounzip(){
 echo "This is the \""$FUNCNAME"\" function in "$0" version "$version #debug
 #
@@ -89,15 +90,17 @@ spause
 } # Test: 
 #
 #
-#* function ozip - ozip <folder> <filename> - makes odf 
+#* function ozip - ozip <folder> <filename> - makes odt
 function ozip(){
-# note that ozip is a reserved word, so do not use it as a function name...
+# note that zip is a reserved word, so do not use it as a function name...
 echo "This is the \""$FUNCNAME"\" function in "$0" version "$version #debug
 #
 drnme=$var2; echo "Directory is "$drnme
 fname=$var3; echo "File is "$fname
 #debug spause
 #
+# delete residue.
+rm -rf $fname
 # change to this directory 
 cd $drnme
 pwd
@@ -116,10 +119,18 @@ libreoffice $fname
 function val(){
 #debug echo "This is the \""$FUNCNAME"\" function in "$0" version "$version #debug
 #
-#debug
-fname=$var2
+fname=$var2; echo "fname is "$fname
+pre=${fname:0:${#fname}-4};echo  "Prefix is "$pre
+ext=${fname:${#fname}-3:3};echo  "Extention is "$ext
+#debug echo $pre"   "$ext
 #debug ; echo -n "File is "$fname
-xmlstarlet val $fname
+case "$ext" in
+    "xml") xmlstarlet val $fname ;;                                        # test as xml
+    "pyx") echo -n $fname" -"; xmlstarlet depyx $fname > $pre.xml; xmlstarlet val $pre.xml | cut -d "-" -f 2;;   # test as pyx
+        *) clear; echo "Must be pyx or xml"; exit 1;;		# Anything else run help and exit...
+esac # 
+
+
 #debug spause
 } # Test: .mswf.sh val test1.xml
 #
@@ -128,13 +139,13 @@ function pdfit(){
 echo "This is the \""$FUNCNAME"\" function in "$0" version "$version #debug
 #
 fname=$var2; echo "fname is "$fname
+pre=${fname:0:${#fname}-4};echo  "Prefix is "$pre
+ext=${fname:${#fname}-3:3};echo  "Extention is "$ext
 #debug spause
-#debug
-unoconv -f pdf $fname.odt # convert to pdf
-ls -alt $fname.pdf
-spause
-#debug 
-evince $fname.pdf
+unoconv -f pdf $fname # convert to pdf
+#debug ls -alt $pre.pdf
+#debug spause
+evince $pre.pdf
 } # Test:
 #
 #* function csow - content mamipulator
@@ -158,7 +169,7 @@ fnami=$var4; echo "fnami is "$fnami
 xmlstarlet depyx $fnami > $drnme/content.xml 
 xmlstarlet val $drnme/content.xml
 spause
-ozip
+ozip > /dev/null
 # $|while read line; do echo $line; done
 } # Test:
 #
@@ -167,7 +178,7 @@ function gpyx(){
 echo "This is the \""$FUNCNAME"\" function in "$0" version "$version #debug
 #
 drnme=$var2; echo "Directory is "$drnme
-fname=$var3; echo "fname is "$fname
+fname=$var3; echo "fname is "$f${fname:${#fname}-3:3}name
 # fnami=$var4; echo "fnami is "$fnami
 #debug spause
 xmlstarlet pyx $drnme/content.xml > ./$fname

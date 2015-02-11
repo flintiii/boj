@@ -1,3 +1,4 @@
+C Begin Document - Begin Header
 (office:document-content
 Axmlns:office urn:oasis:names:tc:opendocument:xmlns:office:1.0
 Axmlns:style urn:oasis:names:tc:opendocument:xmlns:style:1.0
@@ -6,7 +7,7 @@ Axmlns:table urn:oasis:names:tc:opendocument:xmlns:table:1.0
 Axmlns:draw urn:oasis:names:tc:opendocument:xmlns:drawing:1.0
 Axmlns:fo urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0
 Axmlns:xlink http://www.w3.org/1999/xlink
-Axmlns:dc http://purl.org/dc/elemen(ts/1.1/
+Axmlns:dc http://purl.org/dc/elements/1.1/
 Axmlns:meta urn:oasis:names:tc:opendocument:xmlns:meta:1.0
 Axmlns:number urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0
 Axmlns:svg urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0
@@ -35,115 +36,90 @@ Axmlns:field urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0
 Axmlns:formx urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0
 Axmlns:css3t http://www.w3.org/TR/css3-text/
 Aoffice:version 1.2
--\n  
 (office:scripts
 )office:scripts
--\n  
 (office:font-face-decls
--\n    
 (style:font-face
 Asvg:font-family FreeSans
 Astyle:font-family-generic swiss
 Astyle:name FreeSans1
 )style:font-face
--\n    
 (style:font-face
 Asvg:font-family 'Liberation Serif'
 Astyle:font-family-generic roman
 Astyle:font-pitch variable
 Astyle:name Liberation Serif
 )style:font-face
--\n    
 (style:font-face
 Asvg:font-family 'Times New Roman'
 Astyle:font-family-generic roman
 Astyle:font-pitch variable
 Astyle:name Times New Roman
 )style:font-face
--\n    
 (style:font-face
 Asvg:font-family Arial
 Astyle:font-family-generic swiss
 Astyle:font-pitch variable
 Astyle:name Arial
 )style:font-face
--\n    
 (style:font-face
 Asvg:font-family 'Droid Sans Fallback'
 Astyle:font-family-generic system
 Astyle:font-pitch variable
 Astyle:name Droid Sans Fallback
 )style:font-face
--\n    
 (style:font-face
 Asvg:font-family FreeSans
 Astyle:font-family-generic system
 Astyle:font-pitch variable
 Astyle:name FreeSans
 )style:font-face
--\n  
 )office:font-face-decls
--\n  
 (office:automatic-styles
--\n    
 (style:style
 Astyle:family paragraph
 Astyle:list-style-name 
 Astyle:name P1
-Astyle:parent-style-name Title
--\n      
+Astyle:parent-style-name Heading_20_1
 (style:paragraph-properties
 Astyle:auto-text-indent false
 Afo:margin-left 0in
 Afo:margin-right 0in
 Afo:text-indent 0in
 )style:paragraph-properties
--\n    
 )style:style
--\n    
 (style:style
 Astyle:family paragraph
 Astyle:master-page-name Standard
 Astyle:name P2
 Astyle:parent-style-name Heading_20_1
--\n      
 (style:paragraph-properties
 Astyle:page-number auto
 )style:paragraph-properties
--\n    
 )style:style
--\n  
 )office:automatic-styles
--\n  
+C office:body is next
 (office:body
--\n    
 (office:text
 Atext:use-soft-page-breaks true
--\n      
 (office:forms
 Aform:apply-design-mode false
 Aform:automatic-focus false
 )office:forms
--\n      
 (text:sequence-decls
--\n        
 (text:sequence-decl
 Atext:display-outline-level 0
 Atext:name Illustration
 )text:sequence-decl
--\n        
 (text:sequence-decl
 Atext:display-outline-level 0
 Atext:name Table
 )text:sequence-decl
--\n        
 (text:sequence-decl
 Atext:display-outline-level 0
 Atext:name Text
 )text:sequence-decl
--\n          
 )text:sequence-decls
--\n
 C Begin Interest 
 
 C Begin Major Heading
@@ -154,7 +130,6 @@ Atext:style-name P1
 C Skip Line Major Heading
 (text:p
 Atext:style-name P1
--\n      
 )text:p
 C Next Line Major Heading
 (text:p
@@ -166,47 +141,35 @@ Atext:style-name P1
 (text:list
 Axml:id list8613520842505776682
 Atext:style-name WW8Num3
--\n
 C Title Header 
--\n        
 
 C Begins the Text
 
 (text:list-item
--\n          
 (text:h
 Atext:outline-level 1
 Atext:style-name P2
 -PROGRAM PLANNING AND PROPOSAL WRIRING
 )text:h
 
--\n        
 )text:list-item
--\n
 C Numbered Element 
--\n        
 (text:list-item
--\n 
 C numbered heading here         
 
 )text:list-item
--\n      
 )text:list
--\n
 C Normal Text 
-- \n     
+- n     
 C Text item goes here
 
 (text:list
 
     
 (text:list-item
--\n          
 C Text item goes here
 )text:list-item
--\n      
 )text:list
--\n      
 
 (text:list
 
@@ -223,15 +186,11 @@ C End of list-item
 
 C Closing time everything below must stay
 )text:list-item
--\n          
 )text:list
--\n        
 )text:list-item
--\n      
 )text:list
--\n    
 )office:text
--\n  
 )office:body
--\n
+C test number 3
 )office:document-content
+C Document END

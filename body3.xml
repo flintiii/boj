@@ -1,0 +1,37 @@
+<office:body    ><office:text text:use-soft-page-breaks="true      "><office:forms form:apply-design-mode="false" form:automatic-focus="false"></office:forms      ><text:sequence-decls        ><text:sequence-decl text:display-outline-level="0" text:name="Illustration"></text:sequence-decl        ><text:sequence-decl text:display-outline-level="0" text:name="Table"></text:sequence-decl        ><text:sequence-decl text:display-outline-level="0" text:name="Text"></text:sequence-decl          ></text:sequence-decls><!-- Begin Interest -->
+<!-- Begin Major Heading-->
+<text:p text:style-name="P1">PROGRAM PLANNING AND PROPOSAL WRITING </text:p><!-- Skip Line Major Heading-->
+<text:p text:style-name="P1      "></text:p><!-- Next Line Major Heading-->
+<text:p text:style-name="P1">(Major Heading)</text:p><text:list text:style-name="WW8Num3"><!-- Title Header         -->
+
+<!-- Begins the Text-->
+<text:list-item          ><text:h text:outline-level="1" text:style-name="P2">MAJOR HEADING NUMBER ONE</text:h><!-- Begin Insert numsub.pyx-->
+
+              <text:h text:outline-level="2" text:style-name="Heading_20_2">Heading 2</text:h>
+              <text:h text:outline-level="2" text:style-name="Heading_20_2">Heading 2</text:h>
+              <text:h text:outline-level="2" text:style-name="Heading_20_2">Heading 2</text:h>
+              <text:h text:outline-level="2" text:style-name="Heading_20_2">Heading 2</text:h>
+              <text:h text:outline-level="2$(date +%F&quot; &quot;%T)" text:style-name="Heading_20_2">Heading 2</text:h>
+              <text:h text:outline-level="2" text:style-name="Heading_20_2">Heading 2</text:h>
+     <!-- End Insert numsub.pyx-->
+</text:list-item><text:list-item          ><text:h text:outline-level="1" text:style-name="P2">MAJOR HEADING NUMBER TWO</text:h><!-- Begin Insert numsub.pyx-->
+
+              <text:h text:outline-level="2" text:style-name="Heading_20_2">Heading 2</text:h>
+              <text:h text:outline-level="2" text:style-name="Heading_20_2">Heading 2</text:h>
+              <text:h text:outline-level="2" text:style-name="Heading_20_2">Heading 2</text:h>
+              <text:h text:outline-level="2" text:style-name="Heading_20_2">Heading 2</text:h>
+              <text:h text:outline-level="2" text:style-name="Heading_20_2">Heading 2</text:h>
+              <text:h text:outline-level="2" text:style-name="Heading_20_2">Heading 2</text:h>
+     <!-- End Insert numsub.pyx-->
+</text:list-item><!-- Numbered Element         -->
+<text:list-item ><!-- numbered heading here         -->
+</text:list-item      ></text:list><!-- Normal Text -->
+ 
+     <!-- Text item goes here-->
+<text:list><text:list-item          ><!-- Text item goes here$(date +%F" "%T)-->
+</text:list-item      ></text:list      ><text:list><text:list-item><!-- Begin Numbered Headings -->
+<text:list><!-- Start List-->
+<!-- One heading element-->
+<!-- End of list-item-->
+<text:list-item><!-- Closing time everything below must stay-->
+</text:list-item          ></text:list></text:list-item      ></text:list    ></office:text  ></office:body>

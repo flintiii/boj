@@ -1,0 +1,17 @@
+2015-01-07 15:22:33 
+
+dav://flint@docbox.flint.com:1980/
+
+SOURCE:http://uwiki.org/uwiki/curl_dav.html
+
+curl --digest --user 'user:pass' -T SomeFile.html 'http://uwiki.net/uwiki/SomeFile.html'
+
+curl --digest --user 'user:pass' -X MKCOL http://uwiki.net/uwiki/
+
+curl --digest --user 'flint:b2n2n2' -T SomeFile.html dav://flint@docbox.flint.com:1980/grantsmanship/tiddlers
+
+curl --digest --user 'the:3nd' -T test.tdl dav://flint@docbox.flint.com:1980/grantsmanship/tiddlers
+
+curl --digest --user 'the:3nd' -T test.tdl http://flint@docbox.flint.com:1980/grantsmanship/tiddlers
+
+curl --user 'the:3nd' -T test.tdl http://flint@docbox.flint.com:1980/grantsmanship/tiddlers/test.tdl

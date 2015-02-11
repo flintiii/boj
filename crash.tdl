@@ -1,0 +1,13 @@
+galax-doc - XQuery implementation with static typing - documentation
+galax-extra - XQuery implementation with static typing - utilities
+galaxd - XQuery implementation with static typing - network servers
+
+basex - XML database and XPath/XQuery processor
+xacobeo - XPath (XML Path Language) visualizer
+xgrep - grep-like utility for XML files
+xml-twig-tools - Command line tools for processing XML documents
+xmlcopyeditor - fast, free, validating XML editor
+xmlcopyeditor-dbg - fast, free, validating XML editor - debug
+xmlstarlet - command line XML toolkit
+xqilla - XQuery and XPath 2.0 command line interpreter
+

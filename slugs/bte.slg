@@ -1,0 +1,8 @@
+(text:p
+Atext:style-name Text_20_body
+(text:span
+Atext:style-name T3
+- One continuous line of ASCII Text
+)text:span
+)text:p
+

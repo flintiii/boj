@@ -1,0 +1,75 @@
+
+Starting Nmap 6.40 ( http://nmap.org ) at 2014-12-09 14:58 EST
+Stats: 0:00:15 elapsed; 0 hosts completed (0 up), 256 undergoing Ping Scan
+Ping Scan Timing: About 25.20% done; ETC: 14:59 (0:00:45 remaining)
+Nmap scan report for 10.10.10.2
+Host is up (0.0051s latency).
+Not shown: 996 filtered ports
+PORT      STATE  SERVICE
+22/tcp    open   ssh
+443/tcp   open   https
+1000/tcp  closed cadlock
+16113/tcp open   unknown
+
+Nmap scan report for 10.10.10.100
+Host is up (0.029s latency).
+Not shown: 990 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+3389/tcp  open  ms-wbt-server
+5357/tcp  open  wsdapi
+49152/tcp open  unknown
+49153/tcp open  unknown
+49154/tcp open  unknown
+49165/tcp open  unknown
+49167/tcp open  unknown
+
+Nmap scan report for 10.10.10.162
+Host is up (0.024s latency).
+Not shown: 994 closed ports
+PORT     STATE SERVICE
+80/tcp   open  http
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+515/tcp  open  printer
+631/tcp  open  ipp
+9100/tcp open  jetdirect
+
+Nmap scan report for 10.10.10.178
+Host is up (0.000034s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+
+Nmap scan report for 10.10.10.196
+Host is up (0.014s latency).
+Not shown: 995 closed ports
+PORT      STATE SERVICE
+88/tcp    open  kerberos-sec
+445/tcp   open  microsoft-ds
+548/tcp   open  afp
+2968/tcp  open  enpp
+49152/tcp open  unknown
+
+Nmap scan report for 10.10.10.198
+Host is up (0.053s latency).
+Not shown: 997 closed ports
+PORT    STATE SERVICE
+88/tcp  open  kerberos-sec
+445/tcp open  microsoft-ds
+548/tcp open  afp
+
+Nmap scan report for 10.10.10.199
+Host is up (0.023s latency).
+Not shown: 994 filtered ports
+PORT      STATE SERVICE
+80/tcp    open  http
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+443/tcp   open  https
+445/tcp   open  microsoft-ds
+49156/tcp open  unknown
+
+Nmap done: 256 IP addresses (7 hosts up) scanned in 289.76 seconds

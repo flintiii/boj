@@ -1,0 +1,75 @@
+#* function dlot - This downloads the overview tiddle, and stores it in overview.<projname>
+function dlot(){
+echo "This is the \""$FUNCNAME"\" function in "$0" version "$version #debug
+echo "This downloads the overview tiddle, and stores it in body.<projname>" 
+#
+showt
+#
+# debug echo -e " TiddleURL is\t"$tiddleurl 
+# debug echo -e " UID is \t"$uid
+# debug echo -e " PASS is \t"$pass
+# debug echo -e " PROJECT is \t"$proj
+#
+obdy=$(curl -s title http://$uid:$pass@$tiddleurl/$proj/tiddlers/overview)
+# \
+#debug echo "$obdy" | grep "^#" 
+# echo "$obdy"
+# spause
+echo "$obdy" | grep "^#" |while read line; 
+do 
+	echo $line |sed 's/]]//' |sed 's/# //' |sed 's/\[\[//' | tr -d " "; 
+done > $proj.overview
+#
+cat $proj.overview | while read unhead; 
+	do echo $unhead; 
+	# obdy=$(curl -s title http://$uid:$pass@$tiddleurl/$proj/tiddlers/$unhead | grep "^#" )
+	tbody=$(curl -s title http://$uid:$pass@$tiddleurl/$proj/tiddlers/$unhead | grep -v "^<" )
+	#debug 
+	echo "$obdy"
+	# From this line to EOF is the code to export
+	# note slash escapes (\\)
+	read -d '' tslug <<"EOF"
+	Atext:style-name Text_20_body
+	(text:span
+	Atext:style-name T3
+	- ASCII Text
+	)text:span
+	)text:p
+	EOF
+	#
+	echo "$tslug" |while read line; 
+		do 
+		if [ "$line" == "- ASCII Text"  ]; then line=$unhead; fi
+		echo $line
+		done
+	# From this line to EOF is the code to export
+	# note slash escapes (\\)
+	read -d '' tslug <<"EOF"
+	Atext:style-name Text_20_body
+	(text:span
+	Atext:style-name T3
+	- ASCII Text
+	)text:span
+	)text:p
+	EOF
+	#
+	echo "$tslug" |while read line; 
+		do 
+			if [ "$line" == "- ASCII Text"  ]; then line=$tbody; fi
+			echo $line
+		done
+		exit 1
+done
+#
+exit 0
+#
+touch ss
+echo $tiddleurl >> ss
+echo $uid >> ss
+echo $pass  >> ss
+#
+spause
+
+} # Test:
+#
+

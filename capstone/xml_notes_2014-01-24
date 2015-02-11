@@ -1,0 +1,55 @@
+Fri 23 Jan 2015 07:08:50 AM EST 
+
+http://xmlstar.sourceforge.net/doc/UG/xmlstarlet-ug.html
+
+# Update value of an element
+xml ed -u "/xml/table/rec[@id=1]/numField" -v 0 xml/tab-obj.xml
+
+possible answer is pyx 
+
+http://www.ibm.com/developerworks/library/x-matters17/
+
+We start at line 165
+
+Still have issue of encapulization...but not as bad....
+
+grep ^- content.pyx | grep -i Heading | wc -l
+
+C pyx text element
+(text:p
+Atext:style-name Standard
+-About the promise
+-…
+)text:p
+-\n      
+
+(text:list-item
+-\n          
+(text:h
+Atext:outline-level 1
+Atext:style-name Heading_20_1
+-Heading 1
+)text:h
+-\n        
+)text:list-item
+-\n      
+)text:list
+-\n      
+
+
+
+(text:p
+Atext:style-name Standard
+-Could end up on web
+-…
+)text:p
+-\n   
+
+C numbered heading here         
+(text:h
+Atext:outline-level 1
+Atext:style-name Heading_20_1
+-Heading 1
+)text:h
+-\n    
+

@@ -1,77 +1,10 @@
 #!/bin/bash
-# pflint Mon 18 Nov 2014 10:58:26 AM EST
-# Title / Subtitle end delimiter bug Tue 13 Jan 2015 09:41:14 AM EST    
+# pflint Tue 10 Feb 2015 09:06:29 AM EST  
+# dlot actually makes documents...   
 # 
 # Grant Generator
-version="0.09"
+version="0.10"
 #
-# next lines run ballisticly
-#* hold environment
-S=$PWD
-# echo "This is the path "$S
-# debug
-# Define files to be used
-#* function ch4ps - Rename and fill stuff in between braces
-function ch4ps(){
-echo "This is the \""$FUNCNAME"\" function in "$0" version "$version #debug
-uroot
-#* check location of vital files and programs, sanity check
-rm -rf need > /dev/null
-for prog in curl expect cadaver xmlstarlet git # debug banana
-do
-	# echo $prog
-	isit=$(which $prog)
-	# echo $isit 
-	if [ ! -f "$isit" ];
-	then
-	    echo $prog >> need
-	    #debug echo "Type \"sudo apt-get install $prog\" to fix this."
-	    #debug spause
-	    # exit 0
-	fi
-done
-clear
-echo "Welcome to $0!"
-echo "Missing programs:"
-	if [ -f need ];
-	then
-	   echo "    This program needs the following program(s) to be installed on this system."
-	   cat need |while read line; do echo -e \\t" - " $line; done
-	   echo "    If you want them installed please logon as root (sudo $0) and they will install"
-	   exit 0 # breaks you out of loop...
-	fi
-#
-echo "end of check"
-} # Test:
-#
-#
-#* function instg - install all the good stuff
-function instg(){
-echo "This is the \""$FUNCNAME"\" function in "$0" version "$version #debug
-if [ "$(id -u)" = "0" ] && [ -f need ]; then
-   echo "You are root and you are about to install the following:" 1>&2
-   cat need |while read line; do echo -e \\t" - " $line; done
-   read -p "Hit enter to continue and install..." an
-   #debug
-   cat need |while read line; do apt-get install $line; done
-   #debug cat need |while read line; do echo -e \\t" - " $line; done
-fi
-rm -rf need
-exit 0 # breaks you out of loop...
-} # Test:
-# 
-# qualify user
-# uid="" ; if [ "$uid" == "" ]; then echo "Set user id!"; exit; fi
-# passwd="" ; if [ "$passwd" == "" ]; then echo "Set user passwd!"; exit; fi
-# echo "Check if you are root"
-# uroot()
-# exit
-#
-#
-#debug 
-instg
-ch4ps
-# above runs ballisticly
 #
 #* function help  - Help function for template basic help goes here
 function help(){
@@ -93,7 +26,7 @@ cat $0 | grep '^## ' | sed -e 's/##//'
 ##  - chello.sh settt <TITLE> - sets title in tiddle 
 ##  - chello.sh setst <STITLE> - sets sub-title in tiddle
 ##  - chello.sh overview  - generates and overview, sets it as default
-##  - chello.sh dlt - downloads relevant tiddles
+##  - chello.sh dlot - This downloads the overview tiddle, and stores it in body.<projname>
 ##  - chello.sh dtp - downloads default tiddler
 ##    in all of these, Output is delivered to the screen...
 ##      *** NOTE *** This program need not be run as root!
@@ -105,12 +38,79 @@ cat $0 | grep '^## ' | sed -e 's/##//'
 #          *****Documentation Loop ends here the rest is function******
 #
 } # Test: chello.sh
+# next lines run ballisticly
+#* hold environment
+S=$PWD
+# debug echo "This is the path "$S
+#
+# Define files to be used
+#* function ch4ps - checks and reports on what you need.
+function ch4ps(){
+echo "This is the \""$FUNCNAME"\" function in "$0" version "$version #debug
+uroot
+#* check location of vital files and programs, sanity check
+rm -rf need > /dev/null
+for prog in curl expect cadaver xmlstarlet git # debug banana
+do
+	#debug echo $prog
+	isit=$(which $prog)
+	#debug echo $isit 
+	if [ ! -f "$isit" ];
+	then
+	    echo $prog >> need
+	    #debug echo "Type \"sudo apt-get install $prog\" to fix this."
+	    #debug spause
+	fi
+done
+clear
+echo "Welcome to $0!"
+echo "Missing programs:"
+	if [ -f need ];
+	then
+	   echo "    This program needs the following program(s) to be installed on this system."
+	   cat need |while read line; do echo -e \\t" - " $line; done
+	   echo "    If you want them installed please logon as root (sudo $0) and they will install"
+	   exit 0 # breaks you out of loop...
+	fi
+#
+echo "end of check"
+} # Test: chello.sh
+#
+#
+#* function instg - # installs extra software if you are root, installs all the good stuff
+function instg(){
+echo "This is the \""$FUNCNAME"\" function in "$0" version "$version #debug
+if [ "$(id -u)" = "0" ] && [ -f need ]; then
+   echo "You are root and you are about to install the following:" 1>&2
+   cat need |while read line; do echo -e \\t" - " $line; done
+   read -p "Hit enter to continue and install..." an
+   #debug
+   cat need |while read line; do apt-get install $line; done
+   #debug cat need |while read line; do echo -e \\t" - " $line; done
+fi
+rm -rf need
+#debug exit 0 # breaks you out of loop...
+} # Test: chello.sh
+# 
+# qualify user
+# uid="" ; if [ "$uid" == "" ]; then echo "Set user id!"; exit; fi
+# passwd="" ; if [ "$passwd" == "" ]; then echo "Set user passwd!"; exit; fi
+# echo "Check if you are root"
+# uroot()
+# exit
+#
+# next lines run ballisticly
+#debug 
+instg # installs extra software if you are root
+ch4ps # checks and reports on what you need.
+# above runs ballisticly
 #
 #* function dummy - Rename and fill stuff in between braces
 function dummy(){
 echo "This is the \""$FUNCNAME"\" function in "$0" version "$version #debug
 uroot
 } # Test:
+#
 #
 #
 #* function sett - sets the name and logon for tiddlewiki you want to work on
@@ -388,6 +388,76 @@ echo -e $n"\t"$line
 done
 } # Test:bin/chello.sh dlr (assume that ss is right)
 #
+#* function dlot - This downloads the overview tiddle, and stores it in overview.<projname>
+function dlot(){
+echo "This is the \""$FUNCNAME"\" function in "$0" version "$version #debug
+echo "This downloads the overview tiddle, and stores it in body.<projname>" 
+#
+showt
+#
+obdy=$(curl -s title http://$uid:$pass@$tiddleurl/$proj/tiddlers/overview)
+# 
+#debug echo "$obdy" | grep "^#" 
+# echo "$obdy"
+# spause
+echo "$obdy" | grep "^#" |while read line; 
+do 
+	echo $line |sed 's/]]//' |sed 's/# //' |sed 's/\[\[//' | tr -d " "; 
+done > $proj.overview
+#
+# make body.pyx
+rm -rf body.pyx
+touch body.pyx
+# From this line to EOF is the code to export
+# note slash escapes (\\)
+read -d '' hslug <<"EOF"
+C Un-numbered heading
+(text:h
+Atext:outline-level 2
+Atext:style-name Heading_20_2
+-Un-Numbered Heading
+)text:h
+EOF
+#
+# From this line to EOF is the code to export
+# note slash escapes (\\)
+read -d '' tslug <<"EOF"
+C Output ASCII Text
+(text:p
+Atext:style-name Text_20_body
+(text:span
+Atext:style-name T3
+- ASCII Text
+)text:span
+)text:p
+EOF
+#
+cat $proj.overview | while read unhead; 
+	do echo $unhead; 
+	# obdy=$(curl -s title http://$uid:$pass@$tiddleurl/$proj/tiddlers/$unhead | grep "^#" )
+	tbody=$(curl -s title http://$uid:$pass@$tiddleurl/$proj/tiddlers/$unhead | grep -v "^<" )
+	#debug 
+	echo "$tbody"
+	#
+	echo "$hslug" |while read line; 
+		do 
+		if [ "$line" == "-Un-Numbered Heading"  ]; then line="- "$unhead; fi
+		echo $line >> body.pyx
+		done
+	#
+	echo "$tslug" |while read line; 
+		do 
+			if [ "$line" == "- ASCII Text"  ]; then line="- "$tbody; fi
+			echo $line >> body.pyx
+		done
+done
+#
+exit 0
+#
+} # Test:
+#
+
+
 #
 ######################################STANDARD AND MAYBE USEFUL FUNCTIONS BELOW
 #
@@ -423,7 +493,7 @@ if [ "$#" -eq "2" ] && [ "$1" = "settt"    ]; then ARGS="2"; fi
 if [ "$#" -eq "2" ] && [ "$1" = "setst"    ]; then ARGS="2"; fi
 if [ "$#" -eq "1" ] && [ "$1" = "popgp"    ]; then ARGS="1"; fi
 if [ "$#" -eq "2" ] && [ "$1" = "mktdl"    ]; then ARGS="2"; fi
-if [ "$#" -eq "1" ] && [ "$1" = "dlt"      ]; then ARGS="1"; fi
+if [ "$#" -eq "1" ] && [ "$1" = "dlot"     ]; then ARGS="1"; fi
 if [ "$#" -eq "1" ] && [ "$1" = "dlr"      ]; then ARGS="1"; fi
 if [ "$#" -eq "1" ] && [ "$1" = "overview" ]; then ARGS="1"; fi
 if [ "$#" -eq "1" ] && [ "$1" = "dummy"    ]; then ARGS="1"; fi

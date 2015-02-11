@@ -1,0 +1,1000 @@
+  989  bin/mswf.sh ozip testd1 test5.odt
+  990  libreoffice test5.odt &
+  991  bin/mswf.sh val test6.xml
+  992  name="test6" ;cp $name.xml testd1/content.xml ;bin/mswf.sh ozip testd1 $name.odf
+  993  libreoffice test6.odt &
+  994  name="test6" ;cp $name.xml testd1/content.xml ;bin/mswf.sh ozip testd1 $name.odt
+  995  libreoffice test6.odt &
+  996  bin/mswf.sh 
+  997  bin/mswf.sh ounzip testd2  test6.odt 
+  998  cp testd2/content.xml .
+  999  gedit content.xml 
+ 1000  xmlstarlet fo testd2/content.xml .
+ 1001  xmlstarlet fo testd2/content.xml 
+ 1002  xmlstarlet fo testd2/content.xml > content.xml
+ 1003  xlstproc
+ 1004  sudo apt-get install xlstproc
+ 1005  apt-get update
+ 1006  sudo apt-get update
+ 1007  gedit stylesheet.xsl
+ 1008  gedit stylesheet.xsl &
+ 1009  apt-cache search xlstproc
+ 1010  apt-cache search libxslt
+ 1011  apt-cache search xsltproc
+ 1012  apt-get install xsltproc
+ 1013  reboot
+ 1014  ssh flint@cheapo
+ 1015  ssh -X flint@cheapo
+ 1016  apt-cache search odfconverter
+ 1017  apt-cache search odf | grep convert
+ 1018  apt-cache search odf 
+ 1019  history
+ 1020  display "DISPLAY=:0 xdg-open Stick\ It\ to\ the\ Man.jpg"
+ 1021  sudo apt-get install imagemajick
+ 1022  sudo apt-get install imagemagick
+ 1023  display "DISPLAY=:0 xdg-open Stick\ It\ to\ the\ Man.jpg"
+ 1024  ls *.jpg
+ 1025  ls
+ 1026  history | grep jpg
+ 1027  sudo bash
+ 1028  cd grantsmanship/
+ 1029  xsltproc stylesheet.xsl content.xml
+ 1030  gedit odf.xsl &
+ 1031  history
+ 1032  xsltproc odf.xsl content.xml
+ 1033  xsltproc odf.xsl content.xml | less
+ 1034  history
+ 1035  history | grep gedit
+ 1036  gedit stylesheet.xsl &
+ 1037  ssh flint@mail.flint.com
+ 1038  gedit mil &\
+ 1039  gedit mil &
+ 1040  ssh flint@mail.flint.com
+ 1041  cd grantsmanship/
+ 1042  ls -alt | grep books
+ 1043  xmlstarlet pyx books.xml > books.pyx
+ 1044  xmlstarlet depyx books.pyx > booksn.xml; xmlstarlet val booksn.xml
+ 1045  less booksn.xml 
+ 1046  ssh flint@mail.flint.com
+ 1047  ping uvm.edu
+ 1048  ifconfig eth0
+ 1049  reboot
+ 1050  cd grantsmanship/
+ 1051  gedit bin/bcs.sh
+ 1052  bin/chello.sh
+ 1053  cat ss
+ 1054  bin/chello.sh sett docbox.flint.com:1980 the end 
+ 1055  bin/chello.sh 
+ 1056  google-chrome &
+ 1057  less ss
+ 1058  cat ss
+ 1059  bin/chello.sh 
+ 1060  bin/chello.sh maket lheap
+ 1061  bin/chello.sh settt LHEAP
+ 1062  bin/chello.sh setst "Lion Hearing Aid Program"
+ 1063  cat ss
+ 1064  bin/chello.sh overview
+ 1065  cd ..
+ 1066  lt
+ 1067  cd rahe/
+ 1068  lt
+ 1069  gedit mil_2015-01-22 
+ 1070  cd ../grantsmanship/
+ 1071  lt
+ 1072  rm -rf lheap.*
+ 1073  gedit skel.xml &
+ 1074  cd 
+ 1075  cd bin
+ 1076  cd grantsmanship/
+ 1077  cd bin/
+ 1078  lt
+ 1079  cp bcs.sh bics.sh
+ 1080  chmod +x bics.sh 
+ 1081  gedit bics.sh 
+ 1082  lt
+ 1083  cd ..
+ 1084  bin/bics.sh
+ 1085  bin/bics.sh > test.xml
+ 1086  bin/mswf.sh
+ 1087  bin/mswf.sh val test.xml 
+ 1088  ls -alt | grep xml
+ 1089  bin/mswf.sh val content.xml 
+ 1090  xmlstarlet fo test.xml 
+ 1091  cat test.xml 
+ 1092  xmlstarlet fo test.xml 
+ 1093  xmlstarlet fo content.xml
+ 1094  xmlstarlet fo t
+ 1095  gedit test.xml &
+ 1096  ls -alt | grep xml
+ 1097  cp content.xml skel.xml
+ 1098  gedit skel.xml
+ 1099  bin/bics.sh 
+ 1100  bin/bics.sh > test.xml
+ 1101  bin/mswf.sh val test.xml 
+ 1102  bin/mswf.sh val skel.xml
+ 1103  man xmlstarlet 
+ 1104  xmlstarlet el content.xml 
+ 1105  xmlstarlet el -u content.xml 
+ 1106  xmlstarlet el -a content.xml 
+ 1107  xmlstarlet el -u content.xml 
+ 1108  xmlstarlet el -v content.xml 
+ 1109  xmlstarlet sel  content.xml 
+ 1110  xmlstarlet el -u content.xml 
+ 1111  xml sel -t -v "count(/office:body/office:text/text:list)" content.xml
+ 1112  xmlstarlet sel -t -v "count(/office:body/office:text/text:list)" content.xml
+ 1113  xmlstarlet sel -t -v "count(office:document-content/office:body/office:text/text:list)" content.xml
+ 1114  xmlstarlet sel -t -v "count(office:document-content/office:body/office:text/text:list/text:list-item/text:list)" content.xml
+ 1115  xmlstarlet sel -t -v "count(/office:body/office:text/text:list)" content.xml
+ 1116  xmlstarlet sel -t -v "count(office:document-content/office:body/office:text/text:list/text:list-item/text:list)" content.xml
+ 1117  xmlstarlet sel -t -v "count(/office:body/office:text/text:list)" content.xml
+ 1118  xml sel -t -v "count(/office:body/office:text/text:list)" content.xml
+ 1119  xmlstarlet sel -t -v "count(/office:body/office:text/text:list)" content.xml
+ 1120  xmlstarlet sel -t -v "count(office:document-content/office:body/office:text/text:list/text:list-item/text:list)" content.xml
+ 1121  xmlstarlet sel -C -t -v "count(office:document-content/office:body/office:text/text:list/text:list-item/text:list)" content.xml
+ 1122  clear
+ 1123  xmlstarlet sel -C -t -v "count(office:document-content/office:body/office:text/text:list/text:list-item/text:list)" content.xml
+ 1124  xmlstarlet sel -t -f -o " " -v "count(//node())" content.xml 
+ 1125  echo $(xmlstarlet sel -t -f -o " " -v "count(//node())" content.xml) 
+ 1126  xml pyx content.xml 
+ 1127  xmlstarlet pyx content.xml 
+ 1128  xmlstarlet pyx content.xml | less
+ 1129  cp testd1/content.xml .
+ 1130  xmlstarlet pyx content.xml | less
+ 1131  xmlstarlet pyx content.xml > content.pyx
+ 1132  gedit pyx
+ 1133  gedit content.pyx
+ 1134  xmlstarlet depyx content.pyx > contentn.xml
+ 1135  xmlstarlet val contentn.xml.
+ 1136  xmlstarlet depyx content.pyx > contentn.xml; xmlstarlet val contentn.xml
+ 1137  cp testd1/content.xml .
+ 1138  xmlstarlet pyx testd1/content.xml > content.pyx
+ 1139  xmlstarlet depyx content.pyx > contentn.xml; xmlstarlet val contentn.xml
+ 1140  xmlstarlet pyx testd1/content.xml > content.pyx
+ 1141  xmlstarlet depyx content.pyx > contentn.xml; xmlstarlet val contentn.xml
+ 1142  xmlstarlet val books.xml 
+ 1143  xmlstarlet pyx books.xml > books.pyx
+ 1144  gedit 1$
+ 1145  gedit books.pyx 
+ 1146  xmlstarlet depyx books.pyx > booksn.xml; xmlstarlet val booksn.xml
+ 1147  history | grep content
+ 1148  xmlstarlet depyx content.pyx > contentn.xml; xmlstarlet val contentn.xml
+ 1149  grep ^- content.pyx
+ 1150  grep ^- content.pyx | less
+ 1151  xmlstarlet depyx content.pyx > contentn.xml; xmlstarlet val contentn.xml
+ 1152  history | grep books
+ 1153  history | grep content
+ 1154  grep ^C content.pyx
+ 1155  history | grep content
+ 1156  history | grep depyx
+ 1157  kate content.pyx
+ 1158  kate content.pyx &
+ 1159  gedit content.pyx &
+ 1160  history | grep content
+ 1161  xmlstarlet depyx content.pyx > contentn.xml; xmlstarlet val contentn.xml
+ 1162  cp content.xml testd1/.
+ 1163  bin/mswf.sh
+ 1164  cp content.xml testd1/.; bin/mswf.sh ozip testd1 test1.odt; libreoffice test1.odt
+ 1165  history | xmlstarlet 
+ 1166  history |grep xmlstarlet 
+ 1167  grep -n content.pyx #|grep  -i heading 
+ 1168  history |grep content.pyx
+ 1169  grep ^- content.pyx
+ 1170  grep ^- content.pyx | grep -i Heading
+ 1171  grep ^- content.pyx | grep -i Heading | wc -l
+ 1172  history |grep xmlstarlet 
+ 1173  xmlstarlet depyx content.pyx > contentn.xml; xmlstarlet val contentn.xml
+ 1174  history |grep xmlstarlet 
+ 1175  xmlstarlet pyx <dir name>/content.xml > ./content.pyx
+ 1176  xmlstarlet depyx content.pyx > contentn.xml; xmlstarlet val contentn.xml
+ 1177  xmlstarlet depyx content.pyx > content.xml; xmlstarlet val content.xml
+ 1178  xmlstarlet depyx content.pyx > content.xml; xmlstarlet val content.xml|while read line do; echo $line; done
+ 1179  xmlstarlet depyx content.pyx > content.xml; xmlstarlet val content.xml|while read line; do echo $line; done
+ 1180  lt
+ 1181  cat content.xml 
+ 1182  sudo apt-get install most
+ 1183  xmlstarlet 
+ 1184  xmlstarlet pyx content.xml 
+ 1185  xmlstarlet pyx content.xml | most
+ 1186  history | grep content
+ 1187  xmlstarlet depyx content.pyx > content.xml; xmlstarlet val content.xml|while read line; do echo $line; done
+ 1188  xmlstarlet depyx content.pyx > testd1/content.xml; xmlstarlet val testd1/content.xml|while read line; do echo $line; done
+ 1189  history
+ 1190  bin/mswf.sh
+ 1191  lt
+ 1192  mswf.sh ozip testd1 test2.odt
+ 1193  bin/mswf.sh ozip testd1 test2.odt
+ 1194  bin/mswf.sh
+ 1195  bin/mswf.sh tpyx
+ 1196  bin/mswf.sh tpyx testd1 content.pyx content.xml
+ 1197  xmlstarlet depyx content.pyx > testd1/content.xml; xmlstarlet val testd1/content.xml|while read line; do echo $line; done
+ 1198  xmlstarlet depyx content.pyx > testd1/content.xml; xmlstarlet val testd1/content.xml
+ 1199  bin/mswf.sh tpyx testd1 content.pyx content.xml
+ 1200  bin/mswf.sh tpyx testd1 test2.odt content.xml
+ 1201  bin/mswf.sh tpyx testd1 test2.odt content.pyx
+ 1202  gedit testd1/content.xml 
+ 1203  bin/mswf.sh tpyx testd1 test2.odt content.pyx
+ 1204  gedit bin/bics.sh
+ 1205  chmod +x bin/pycs.sh 
+ 1206  cp content.pyx obe/$(date +%F)_content.pyx
+ 1207  bin/mswf.sh tpyx testd1 test2.odt content.pyx
+ 1208  lt
+ 1209  bin/mswf.sh tpyx testd1 test2.odt content.pyx
+ 1210  gedit bin/mswf.sh &
+ 1211  bin/mswf.sh tpyx testd1 test2.odt content.pyx
+ 1212  lt
+ 1213  bin/mswf.sh 
+ 1214  bin/mswf.sh ounxip test3 test3.odt
+ 1215  bin/mswf.sh ounzip test3 test3.odt
+ 1216  history | grep xmlstarlet
+ 1217  bin/mswf.sh gpyx
+ 1218  bin/mswf.sh 
+ 1219  lt
+ 1220  rm -rf test3
+ 1221  bin/mswf.sh 
+ 1222  bin/mswf.sh ozip test3 test3.odt
+ 1223  bin/mswf.sh ounzip test3 test3.odt
+ 1224  cp content.pyx obe/$(date +%F)_content.pyx
+ 1225  bin/mswf.sh 
+ 1226  bin/mswf.sh gpys test3 test3.pyx
+ 1227  gedit test3.pyx
+ 1228  cat test3.pyx
+ 1229  bin/mswf.sh gpys test3 test3.pyx
+ 1230  bin/mswf.sh gpyx test3 test3.pyx
+ 1231  cat test3.pyx
+ 1232  geit test3.pyx 
+ 1233  gedit test3.pyx 
+ 1234  bin/mswf.sh tpyx test3 test4.odt test3.pyx
+ 1235  bin/mswf.sh 
+ 1236  bin/mswf.sh tpyx test3 test4.odt test3.pyx
+ 1237  lt
+ 1238  libreoffice test4.odt 
+ 1239  rm -rf test4
+ 1240  rm -rf test4.odt 
+ 1241  libreoffice test3.odt 
+ 1242  lt
+ 1243  bin/mswf.sh 
+ 1244  bin/mswf.sh ounzip test4 test3.odt
+ 1245  bin/mswf.sh tpyx test3 test4.odt test3.pyx
+ 1246  bin/mswf.sh 
+ 1247  bin/mswf.sh inst test3 content.xml 
+ 1248  bin/mswf.sh tpyx test3 test4.odt content.xml 
+ 1249  lt
+ 1250  lt | grep pyx
+ 1251  bin/mswf.sh tpyx test3 test4.odt 
+ 1252  lt | grep pyx
+ 1253  bin/mswf.sh tpyx test3 test4.odt content.pyx
+ 1254  bin/mswf.sh tpyx test3 test4.odt test3.pyx
+ 1255  bin/mswf.sh tpyx test3 test4.odt content.pyx
+ 1256  bin/mswf.sh tpyx test3 test4.odt test3.pyx
+ 1257  bin/mswf.sh tpyx test3 test4.odt content.pyx
+ 1258  bin/mswf.sh tpyx test3 test4.odt rosetta.pyx
+ 1259  bin/mswf.sh tpyx test3 test4.odt content.pyx
+ 1260  bin/mswf.sh tpyx test3 test4.odt content.pyx\
+ 1261  bin/mswf.sh tpyx test3 test4.odt content.pyx
+ 1262  libreoffice test4.odt
+ 1263  bin/mswf.sh tpyx test3 test4.odt content.pyx
+ 1264  mv content.pyx content.broke.pyx
+ 1265  cp rosetta.pyx content.pyx
+ 1266  bin/mswf.sh tpyx test3 test4.odt content.pyx
+ 1267  ping 10.0.1.21
+ 1268  ifconfig eth0
+ 1269  sudo bash
+ 1270  pwd
+ 1271  grep zeta .gtk-bookmarks 
+ 1272  killall firefox
+ 1273  ssh flint@mail.flint.com
+ 1274  firefox 
+ 1275  ssh flint@mail.flint.com
+ 1276  ssh flint@beta
+ 1277  fdisk -l
+ 1278  df -h
+ 1279  dmesg
+ 1280  dmesg | tail -20
+ 1281  watch 'dmesg | tail -20'
+ 1282  pwd
+ 1283  exit
+ 1284  apt-cache search report
+ 1285  apt-cache search reportlab
+ 1286  apt-cache search tiny
+ 1287  apt-cache search tinym
+ 1288  gedit content.xml 
+ 1289  history | grep xml
+ 1290  bin/mswf.sh
+ 1291  ly
+ 1292  history | grep pdf
+ 1293  exit
+ 1294  gedit bin/mswf.sh &
+ 1295  firefox . &
+ 1296  firefox &
+ 1297  ssh flint@beta
+ 1298  ssh flint@mail.flint.com
+ 1299  history
+ 1300  history | xml
+ 1301  history |grep xml
+ 1302  bin/mswf.sh
+ 1303  cd grantsmanship/
+ 1304  bin/mswf.sh
+ 1305  bin/mswf.sh pdfit test4
+ 1306  pwd
+ 1307  ls
+ 1308  rm -rf humcaudio.*
+ 1309  rm -rf sparticus.*
+ 1310  ls *.doc
+ 1311  cd docs/
+ 1312  ls
+ 1313  ls -alt
+ 1314  man noconv
+ 1315  man unoconv
+ 1316  cd ..
+ 1317  git init
+ 1318  git config --global flint@flint.com
+ 1319  git config --global user.email "flint@flint.com"
+ 1320  git config --global user.name "Paul Flint"
+ 1321  git clone git@github.com:flintiii/grantbot
+ 1322  ls
+ 1323  git clone git@github.com:flintiii/grantbot.git
+ 1324  ls -al ~/.ssh
+ 1325  SSH / Generating SSH keys
+ 1326  Generating SSH keys
+ 1327  SSH keys are a way to identify trusted computers, without involving passwords. The steps below will walk you through generating an SSH key and then adding the public key to your GitHub account.
+ 1328  Tip: We recommend that you regularly review your SSH keys list and revoke any that haven't been used in a while.
+ 1329  Step 1: Check for SSH keys
+ 1330  First, we need to check for existing SSH keys on your computer. Open up the command line and type:
+ 1331  ls -al ~/.ssh
+ 1332  # Lists the files in your .ssh directory, if they exist
+ 1333  Check the directory listing to see if you already have a public SSH key. The default public key file names are:
+ 1334      id_dsa.pub
+ 1335      id_ecdsa.pub
+ 1336      id_ed25519.pub
+ 1337      id_rsa.pub
+ 1338  Step 2: Generate a new SSH key
+ 1339  To generate a new SSH key, copy and paste the text below, making sure to substitute in your email address. The default settings are preferred, so when you're prompted to "Enter a file in which to save the key", just press Enter to continue.
+ 1340  ssh-keygen -t rsa -C "flint@flint.com"
+ 1341  ls -al ~/.ssh
+ 1342  gedit ~/.ssh/id_rsa.pub
+ 1343  git clone git@github.com:flintiii/grantbot.git
+ 1344  lt
+ 1345  cd grantbot/
+ 1346  ls
+ 1347  cd ..
+ 1348  cd bin/
+ 1349  ls
+ 1350  cd..
+ 1351  cd ..
+ 1352  git add .
+ 1353  git commit -m 'from stonehead'
+ 1354  git push origin master
+ 1355  ssh -vT git@github.com
+ 1356  git push .
+ 1357  git push 
+ 1358  git pull
+ 1359  history | grep git
+ 1360  git clone git@github.com:flintiii/grantbot
+ 1361  ifconfig eth0
+ 1362  ping 10.0.1.249
+ 1363  ssh flint@10.0.1.249
+ 1364  sudo bash
+ 1365  cp bin/mswf.sh bin/obe/$(date +%F)_mswf.sh
+ 1366  unoconv --show
+ 1367  [ef
+ 1368  pwd
+ 1369  cd docs/
+ 1370  ls -alt
+ 1371  unoconv -f pdf bb_2014-12-10e.doc
+ 1372  lt
+ 1373  evince bb_2014-12-10e.pdf 
+ 1374  scp bb_2014-12-10e.pdf flint@mail.flint.com
+ 1375  scp bb_2014-12-10e.pdf flint@mail.flint.com:.
+ 1376  cd ~/Pictures/
+ 1377  ls
+ 1378  ls -alt
+ 1379  cd Edit\ Profile\ \|\ LinkedIn_files/
+ 1380  ls
+ 1381  nautilus . &
+ 1382  apt-get install cheese
+ 1383  cheese &
+ 1384  lsusb 
+ 1385  pwd
+ 1386  mkdir hpdv9000
+ 1387  cd hpdv9000
+ 1388  cd hpdv9000 > hpdv9000.hw
+ 1389  lshw > hpdv9000.hw
+ 1390  lsmod
+ 1391  lsmod | less
+ 1392  less hpdv9000.hw
+ 1393  poweroff
+ 1394  nautilus . &
+ 1395  ping zeta
+ 1396  df -h
+ 1397  cd  /media/flint/50D4-D6D7
+ 1398  ls
+ 1399  rm -rf M1-SK
+ 1400  cd disks/
+ 1401  ls
+ 1402  cd -
+ 1403  cd ~
+ 1404  mkdir software
+ 1405  mkdir -P software/windows
+ 1406  mkdir -p software/windows
+ 1407  cd software/windows
+ 1408  df -h
+ 1409  mv /media/flint/50D4-D6D7/disks .
+ 1410  cd ~
+ 1411  rsync -avr grantsmanship /media/flint/50D4-D6D7/
+ 1412  ifconfig
+ 1413  sudo bash
+ 1414  ssh flint@mail.flint.com
+ 1415  ifconfig eth0
+ 1416  ifconfig -a
+ 1417  ping 10.0.1.208 
+ 1418  ping 10.0.1.21
+ 1419  ping uvm.edu
+ 1420  ssh flint@10.0.1.249
+ 1421  ssh flint@mail.flint.com
+ 1422  apt-get install ubuntu-sdk 
+ 1423  apt-get autoremove
+ 1424  cd grantsmanship/
+ 1425  bin/chello.sh
+ 1426  gedit bin/chello.sh
+ 1427  apt-cache search randr
+ 1428  apt-get install kde-workspace-randr arandr
+ 1429  kde-workspace-randr 
+ 1430  arandr 
+ 1431  exit
+ 1432  ssh flint@mail.flint.com
+ 1433  sudo poweroff
+ 1434  cat .gtk-bookmarks 
+ 1435  ssh flint@mail.flint.com
+ 1436  cheese &
+ 1437  sudo bash
+ 1438  cd bin
+ 1439  cd grantsmanship/bin/
+ 1440  lt
+ 1441  cd ..
+ 1442  ls -alt | grep pyx$
+ 1443  rm exp1
+ 1444  rm exp1.pyx
+ 1445  cat test3.pyx
+ 1446  cat test3.pyx; while read line do; echo $line; done 
+ 1447  cat test3.pyx; while read line; do echo $line; done 
+ 1448  gedit test3.pyx &
+ 1449  cat test3.pyx; while read line; do echo $line; done 
+ 1450  cat test4.pyx; while read line; do echo $line; done 
+ 1451  lt
+ 1452  mv test4 test4.pyx
+ 1453  cat test4.pyx; while read line; do echo $line; done 
+ 1454  rmdir test4.pyx/
+ 1455  rm -rf test4.pyx/
+ 1456  cat test4.pyx; while read line; do echo $line; done 
+ 1457  lt
+ 1458  cp -R grantsmanship/* .
+ 1459  cd grantsmanship/
+ 1460  ls
+ 1461  cd ..
+ 1462  mv -R grantsmanship/* .
+ 1463  mv grantsmanship/* .
+ 1464  cd grantsmanship/
+ 1465  ls
+ 1466  cd ..
+ 1467  rm -rf grantsmanship/
+ 1468  lt
+ 1469  cat test4.pyx; while read line; do echo $line; done 
+ 1470  cat test3.pyx; while read line; do echo $line; done 
+ 1471  cat test3.pyx#; while read line; do echo $line; done 
+ 1472  cat test3.pyx #; while read line; do echo $line; done 
+ 1473  cat test3.pyx ; while read line; do echo $line; done 
+ 1474  ls *.txt
+ 1475  ls
+ 1476  cat content.xml ; while read line; do echo $line; done 
+ 1477  ls -alt ; while read line; do echo $line; done 
+ 1478  while read line; do echo $line; done < test4.pyx
+ 1479  which bash
+ 1480  chmod +x bin/ppyx.sh 
+ 1481  bin/ppyx.sh 
+ 1482  man grep
+ 1483  bin/ppyx.sh 
+ 1484  grep ) test4.pyx
+ 1485  grep ")" test4.pyx
+ 1486  grep -c ")" test4.pyx
+ 1487  bin/ppyx.sh 
+ 1488  man echo
+ 1489  bin/ppyx.sh 
+ 1490  history | grep cat
+ 1491  cat test4.pyx| while read line; do echo $line; done
+ 1492  bin/ppyx.sh 
+ 1493  cat test4.pyx| while read line; do echo $line; done
+ 1494  bin/ppyx.sh 
+ 1495  history | grep while
+ 1496  bin/ppyx.sh 
+ 1497  bin/ppyx.sh | grep =v 0,0 
+ 1498  bin/ppyx.sh | grep -v 0,0 
+ 1499  pwd
+ 1500  gedit bin/mswf.sh &
+ 1501  bin/ppyx.sh | grep -v 0,0 
+ 1502  chmod bin/ppyx1
+ 1503  chmod +x bin/ppyx1.sh 
+ 1504  chmod bin/ppyx1.sh
+ 1505  bin/ppyx1.sh
+ 1506  chmod bin/ppyx1.sh
+ 1507  bin/ppyx1.sh
+ 1508  bin/ppyx1.sh | less
+ 1509  bin/ppyx1.sh 
+ 1510  bin/ppyx1.sh | grep -v ,0,
+ 1511  ssh flint@10.0.1.45
+ 1512  history | grep end
+ 1513  exit
+ 1514  apt-cache search pyx
+ 1515  exit
+ 1516  apt-cache search atom
+ 1517  apt-cache search atom | grep edit
+ 1518  history
+ 1519  history | grep end
+ 1520  exit
+ 1521  cd grantsmanship/
+ 1522  history
+ 1523  history | grep end
+ 1524  rm -rf test.pyx test/content.xml ;bin/pycs2.sh > test.pyx;bin/mswf.sh tpyx test test.odt test.pyx # end-to-end
+ 1525  gedit test.pyx &
+ 1526  rm -rf test.pyx test/content.xml ;bin/pycs.sh > test.pyx;bin/mswf.sh tpyx test test.odt test.pyx # end-to-end
+ 1527  echo obe/$(date +%F)_
+ 1528  echo obe/$(date +%F%T)_
+ 1529  echo obe/$(date +%F %T)_
+ 1530  echo obe/$(date +%F" "%T)_
+ 1531  gedit bin/pycs.sh &
+ 1532  rm -rf test.pyx test/content.xml ;bin/pycs.sh > test.pyx;bin/mswf.sh tpyx test test.odt test.pyx # end-to-end
+ 1533  lt
+ 1534  rm -rf test.pyx test/content.xml ;bin/pycs.sh > test.pyx;bin/mswf.sh tpyx test test.odt test.pyx # end-to-end
+ 1535  ly |grep pyx
+ 1536  rm -rf test.pyx test/content.xml ;bin/pycs.sh > test.pyx;bin/mswf.sh tpyx test test.odt test.pyx # end-to-end
+ 1537  ly |grep pyx
+ 1538  gedit numsubs.pyx numsub.pyx &
+ 1539  ly |grep pyx
+ 1540  cat stest.pyx 
+ 1541  cat stest.pyx | list
+ 1542  sudo bash
+ 1543  ly |grep pyx
+ 1544  bin/mswf.sh val numsub.pyx 
+ 1545  bin/mswf.sh val numsubs.pyx 
+ 1546  bin/mswf.sh val section1.pyx 
+ 1547  xmlstarlet ed numsubs.pyx
+ 1548  xmlstarlet ed numsub.pyx
+ 1549  xmlstarlet ed numsub.xml
+ 1550  clear
+ 1551  xmlstarlet ed numsub.xml
+ 1552  xmlstarlet ed --help
+ 1553  xmlstarlet val numsub.xml
+ 1554  xmlstarlet val numsubs.xml
+ 1555  firefox numsub.xml
+ 1556  xmlstarlet val numsub.xml
+ 1557  firefox numsubs.xml
+ 1558  chmod +x bin/mkbdy.sh 
+ 1559  bin/mkbdy.sh
+ 1560  ls -alt | grep test
+ 1561  bin/mkbdy.sh > btest
+ 1562  xmlstarlet val btest.xml
+ 1563  xmlstarlet val numsub.xml
+ 1564  xmlstarlet val btest.xml
+ 1565  cd compare/
+ 1566  bin/mkbdy.sh > btest.pyx
+ 1567  cd ..
+ 1568  bin/mkbdy.sh > btest.pyx
+ 1569  xmlstarlet val btest.pyx
+ 1570  diff -y numsub.pyx btest.pyx | less -N
+ 1571  cmp numsub.pyx btest.pyx 
+ 1572  xmlstarlet val btest.pyx
+ 1573  xmlstarlet val numsub.pyx
+ 1574  xmlstarlet val numsub.xml
+ 1575  bin/mswf.sh val btest.pyx
+ 1576  bin/mswf.sh val numsubs.pyx
+ 1577  lt
+ 1578  xmlstarlet vsl numsubs.xml 
+ 1579  xmlstarlet val numsubs.xml 
+ 1580  apt-cache search xml | grep val
+ 1581  sudo apt-get install xmlcopyeditor 
+ 1582  xmlcopyeditor numsub.xml
+ 1583  xmlcopyeditor numsubs.xml
+ 1584  xmlcopyeditor content.xml
+ 1585  ls -alt | grep content
+ 1586  cat content.pyx
+ 1587  bin/mswf.sh val content.pyx
+ 1588  xmlcopyeditor content.xml
+ 1589  rm -rf test.pyx test/content.xml ;bin/pycs.sh > test.pyx;bin/mswf.sh tpyx test test.odt content.pyx # end-to-end
+ 1590  cd obe
+ 1591  xmlcopyeditor content.xml
+ 1592  ls -alt | grep content
+ 1593  xmlcopyeditor 2015-01-15_content.xml
+ 1594  man xmlcopyeditor
+ 1595  cd ..
+ 1596  ls *.odt
+ 1597  libreoffice pp+pw
+ 1598  libreoffice pp+pw.odt
+ 1599  lt
+ 1600  bin/mswf.sh
+ 1601  bin/mswf.sh ounzip org org.odt
+ 1602  lt
+ 1603  rm -rf org
+ 1604  bin/mswf.sh ounzip orig orig.odt
+ 1605  cd orig/
+ 1606  xmlcopyeditor content.xml 
+ 1607  cp content.xml ../orig.xml
+ 1608  cd ..
+ 1609  bin/mswf.sh val orig.xml
+ 1610  cat orig.xml 
+ 1611  cd orig
+ 1612  xmlstarlet fo content.xml > ../orig.xml
+ 1613  bin/mswf.sh val orig.xml
+ 1614  cd ..
+ 1615  bin/mswf.sh val orig.xml
+ 1616  xmlcopyeditor orig.xml
+ 1617  cat orig.xml 
+ 1618  cat numsubs.xml 
+ 1619  cat numsub.xml 
+ 1620  cat numsubs.pyc 
+ 1621  bin/mswf.sh val numsubs.xml
+ 1622  bin/mswf.sh val numsub.xml
+ 1623  bin/mswf.sh 
+ 1624  xmlstarlet 
+ 1625  xmlstarlet pyx numsubs.xml
+ 1626  xmlstarlet pyx numsubs.xml > numsubs.pyx
+ 1627  cat numsubs.pyx
+ 1628  bin/mswf.sh val numsubs.pyx
+ 1629  bin/mswf.sh val numsubs.xml
+ 1630  ls -alt | grep numsub
+ 1631  cp numsubs.pyx~ numsubs1.pyx
+ 1632  bin/mswf.sh val numsubs1.pyx
+ 1633  cp numsubs1.pyx numsubs.pyx
+ 1634  bin/mswf.sh val numsubs.pyx
+ 1635  bin/mswf.sh val numsubs.xml
+ 1636  xmlcopyeditor numsubs.xml
+ 1637  bin/mswf.sh val numsubs.pyx
+ 1638  xmlcopyeditor numsubs.xml
+ 1639  bin/mkbdy.sh > numsub2.pyx
+ 1640  bin/mswf.sh val numsub2.pyx
+ 1641  cd ../jobhunt/
+ 1642  ly
+ 1643  gedit peter_2015-02-04
+ 1644  cd ../grantsmanship/
+ 1645  chmod +x bin/mkbdy.sh
+ 1646  bin/mkbdy.sh
+ 1647  bin/mkbdy.sh > numsub10.pyx
+ 1648  bin/mswf.sh val numsub10.pyx
+ 1649  xmlcopyeditor numsub10.pyx
+ 1650  bin/mswf.sh val numsub2.pyx
+ 1651  bin/mkbdy.sh > numsub2a.pyx
+ 1652  bin/mswf.sh val numsub2.pyx
+ 1653  bin/mswf.sh val numsub2a.pyx
+ 1654  diff -y numsub2.pyx numsub2a.pyx 
+ 1655  cat numsub2.pyx 
+ 1656  diff -y numsub2.pyx numsub2a.pyx 
+ 1657  cat numsub2a.pyx 
+ 1658  cat numsub.pyx 
+ 1659  cat numsub.pyx
+ 1660  vi numsub.pyx
+ 1661  bin/mkbdy.sh > numsub2a.pyx
+ 1662  cat numsub2a.pyx
+ 1663  bin/mswf.sh val numsub2a.pyx
+ 1664  diff -y numsub2.pyx numsub2a.pyx 
+ 1665  cat numsub2.pyx 
+ 1666  diff -y numsub2.pyx numsub2.pyx 
+ 1667  bin/mswf.sh val numsub2.pyx
+ 1668  ls *.xml
+ 1669  ls -alt *.xml
+ 1670  firefox orig.xml &
+ 1671  kate orig.xml 
+ 1672  xmlcopyeditor orig.xml
+ 1673  bin/mswf.sh val numsub2.pyx
+ 1674  sudo bash
+ 1675  history | grep end
+ 1676  rm -rf test.pyx test/content.xml ;bin/pycs.sh > test.pyx;bin/mswf.sh tpyx test test.odt test.pyx # end-to-end
+ 1677  history > obe/$(date +%F)_history
+ 1678  sudo reboot
+ 1679  ifconfig eth0
+ 1680  ifconfig -a
+ 1681  ssh flint@mail.flint.com
+ 1682  ifconfig -
+ 1683  ifconfig -a
+ 1684  ping uvm.edu
+ 1685  cd grantsmanship/
+ 1686  kate body1.pyx
+ 1687  xmlstarlet sel --net -t -m "//item" -o "Title: " -v "title" -n 
+ 1688  xmlstarlet sel --net -t -m "//item" -o "Title: " -v "title" -n -o "Author: " -v "author" -n  http://arstechnica.com/index.ars/rss
+ 1689  xmlstarlet sel --net -t -m "//item" -o "Date: " -v "date" -n -o "Author: " -v "author" -n  http://arstechnica.com/index.ars/rss
+ 1690  xmlstarlet sel --net -t -m "//item" -o "Title: " -v "title" -n -o "Author: " -v "author" -n  http://arstechnica.com/index.ars/rss
+ 1691  xmlstarlet sel --net -t -m "//item" -o "Title: " -v "title" -n -o "Date: " -v "date" -n  http://arstechnica.com/index.ars/rss
+ 1692  zip -p test.odt content.xml | xmlstarlet sel   -N text="urn:oasis:names:tc:opendocument:xmlns:text:1.0"  -t -m "//text:*[@text:outline-level]" -v "@text:outline-level" -o " " -v . -n
+ 1693  ls -alt test.odt
+ 1694  zip -p test.odt content.xml | xmlstarlet sel -N text="urn:oasis:names:tc:opendocument:xmlns:text:1.0"  -t -m "//text:*[@text:outline-level]" -v "@text:outline-level" -o " " -v . -n
+ 1695  zip -p test.odt content.xml | less
+ 1696  rm -rf test.pyx test/content.xml ;bin/pycs.sh > test.pyx;bin/mswf.sh tpyx test test.odt test.pyx # end-to-end
+ 1697  history | grep end
+ 1698  rm -rf test.pyx test/content.xml ;bin/pycs.sh > test.pyx;bin/mswf.sh tpyx test test.odt test.pyx # end-to-end
+ 1699  pwd
+ 1700  cd Downloads/
+ 1701  ly
+ 1702  mkdir lbayle
+ 1703  cd lbayle
+ 1704  mv ../Windham\ * .
+ 1705  cd ..
+ 1706  mv lbayle ~/grantsmanship/
+ 1707  cd ~/grantsmanship//lbayle
+ 1708  man rename
+ 1709  ls
+ 1710  man rename
+ 1711  rename '/ /_/g' *
+ 1712  man rename
+ 1713  rename 's/ /_/g' *
+ 1714  ls
+ 1715  libreoffice Windham_Foundation.docx 
+ 1716  libreoffice Windham_Foundation.docx &
+ 1717  cd ..
+ 1718  bin/chello.sh
+ 1719  chello showt
+ 1720  bin/chello.sh showt
+ 1721  vi ss
+ 1722  bin/chello.sh showt
+ 1723  bin/chello.sh 
+ 1724  bin/chello.sh maket Windham
+ 1725  bin/chello.sh 
+ 1726  bin/chello.sh maket "SMART MOVES"
+ 1727  bin/chello.sh 
+ 1728  bin/chello.sh showt3
+ 1729  bin/chello.sh settt "SMART MOVES"
+ 1730  bin/chello.sh 
+ 1731  #bin/chello.sh setst "Skills Mastery and Resistance Training"
+ 1732  gedit &
+ 1733  bin/chello.sh showt
+ 1734  bin/chello.sh setst "Skills Mastery and Resistance Training - Meeting On Vital Engaged Struggle"
+ 1735  bin/chello.sh showt
+ 1736  bin/chello.sh 
+ 1737  bin/chello.sh overview
+ 1738  rm -rf test.pyx test/content.xml ;bin/pycs.sh > test.pyx;bin/mswf.sh tpyx test test.odt test.pyx # end-to-end
+ 1739  bin/mswf.sh
+ 1740  bin/mswf.sh ounzip wtest wtest.odt
+ 1741  gedit bin/mswf.sh &
+ 1742  cp  bin/mswf.sh bin/obe/$(date +%F)_mswf.sh
+ 1743  cd wtest/
+ 1744  ../bin/mswf.sh val content.xml
+ 1745  ls
+ 1746  cd ..
+ 1747  bin/mswf.sh ounzip wtest wtest.odt
+ 1748  lt
+ 1749  libreoffice &
+ 1750  lt
+ 1751  cd wtest/
+ 1752  ls
+ 1753  mv wtest.odt ..
+ 1754  rm -rf wtest
+ 1755  lt
+ 1756  cd ..
+ 1757  lt
+ 1758  rm -rf wtest
+ 1759  history | grep mswf
+ 1760  bin/mswf.sh ounzip wtest wtest.odt
+ 1761  cd wtest/
+ 1762  ls
+ 1763  cp content.xml ../wtest.xml
+ 1764  cd ..
+ 1765  bin/mswf.sh val wtest.xml 
+ 1766  bin/mswf.sh 
+ 1767  bin/mswf.sh gpyx wtest wtest.pyx
+ 1768  history | grep end
+ 1769  rm -rf test.pyx test/content.xml ;bin/pycs.sh > test.pyx;bin/mswf.sh tpyx test test.odt test.pyx # end-to-end
+ 1770  pwd
+ 1771  cd test
+ 1772  ls
+ 1773  cd ..
+ 1774  ls -alt | grep test
+ 1775  libreoffice test.odt 
+ 1776  cat test.pyx
+ 1777  cat test.pyx | less
+ 1778  bin/mswf.sh val test.pyx
+ 1779  bin/mswf.sh tpyx test test.odt test.pyx # end-to-end
+ 1780  bin/mswf.sh tpyx 
+ 1781  bin/mswf.sh test ctest.odt
+ 1782  bin/mswf.sh ozip test ctest.odt
+ 1783  ls -alt | grep odt
+ 1784  rm -rf test
+ 1785  cp -R orig test
+ 1786  bin/mswf.sh ozip test ctest.odt
+ 1787  pwd
+ 1788  bin/mswf.sh tpyx test test.odt orig.pyx # end-to-end
+ 1789  rm -rf test
+ 1790  cp -R orig test
+ 1791  bin/mswf.sh ozip test ctest.odt
+ 1792  libreoffice orig.odt
+ 1793  bin/mswf.sh ozip 
+ 1794  bin/mswf.sh ounzip test orig.odt
+ 1795  bin/mswf.sh tpyx test test.odt orig.pyx # end-to-end
+ 1796  bin/mswf.sh val  orig.pyx 
+ 1797  bin/mswf.sh val orig.pyx 
+ 1798  ls -alt | grep orig.pyx
+ 1799  ls -alt | grep orig.xlm
+ 1800  ls -alt | grep orig.xml
+ 1801  xmlstarlet pyx orig.xml
+ 1802  xmlstarlet pyx content.xml
+ 1803  pwd
+ 1804  xmlstarlet pyx test/content.xml 
+ 1805  cd test
+ 1806  ls
+ 1807  xmlstarlet val content.xml 
+ 1808  cd ../orig/
+ 1809  xmlstarlet val content.xml 
+ 1810  cd ..
+ 1811  rm -rf test
+ 1812  cp -R orig test
+ 1813  cd test
+ 1814  xmlstarlet val content.xml 
+ 1815  bin/mswf.sh tpyx test test.odt orig.pyx # end-to-end
+ 1816  cd ..
+ 1817  xmlstarlet pyx test/content.xml 
+ 1818  xmlstarlet pyx test/content.xml > test.pyx
+ 1819  bin/mswf.sh tpyx test test.odt test.pyx # end-to-end
+ 1820  bin/mswf.sh tpyx test test.odt content.pyx 
+ 1821  bin/mswf.sh t
+ 1822  bin/mswf.sh 
+ 1823  bin/mswf.sh dummy
+ 1824  bin/mswf.sh tpyx test test.odt content.pyx 
+ 1825  rm -rf test; cp -R orig test
+ 1826  bin/mswf.sh 
+ 1827  bin/mswf.sh ozip orig ctest.odt
+ 1828  libreoffice orig.odt
+ 1829  rm -rf orig
+ 1830  rm -rf test
+ 1831  bin/mswf.sh ounzip orig 
+ 1832  bin/mswf.sh ounzip orig orig.odt
+ 1833  bin/mswf.sh ozip orig ctest.odt
+ 1834  lobreoffice ctest.odt
+ 1835  libreoffice ctest.odt
+ 1836  cd bin
+ 1837  cd obe
+ 1838  ls
+ 1839  ls -alt | grep mswf.sh
+ 1840  cp ../mswf.sh mswf.07.sh
+ 1841  cp 2015-02-06_mswf.sh ../mswf.sh
+ 1842  cd ..
+ 1843  bin/mswf.sh ozip orig ctest.odt
+ 1844  ls -alt ctest.odt 
+ 1845  ls -alt orig.odt 
+ 1846  dq | grep orig
+ 1847  dq | grep test
+ 1848  rm -rf test;bin/mswf.sh ounzip test orig.odt
+ 1849  dq | grep orig
+ 1850  rm -rf wtest
+ 1851  dq | grep test
+ 1852  rm -rf test2
+ 1853  cd orig
+ 1854  zip -0 -X ../wuf.odt mimetype
+ 1855  zip -r ../wuf.odt * -x mimetype
+ 1856  cd ..
+ 1857  libreoffice wtf.odt
+ 1858  lt
+ 1859  libreoffice wuf.odt
+ 1860  rm -rf wuf.odt 
+ 1861  bin/mswf.sh ozip orig ctest.odt
+ 1862  cd orig/
+ 1863  zip -0 -X ../wuf.odt mimetype;zip -r ../wuf.odt * -x mimetype
+ 1864  cd ..
+ 1865  libreoffice wuf.odt 
+ 1866  ls -alt wuf.odt ctest.odt 
+ 1867  bin/mswf.sh ozip orig dtest.odt
+ 1868  ls -alt wuf.odt dtest.odt
+ 1869  ls -alt wuf.odt dtest.odt ctest.odt
+ 1870  bin/mswf.sh ozip orig ctest.odt
+ 1871  bin/mswf.sh ozip orig etest.odt
+ 1872  cd bin
+ 1873  cp obe/mswf.07.sh ../mswf.sh
+ 1874  cd ..
+ 1875  bin/mswf.sh ozip orig ctest.odt
+ 1876  ls -alt wuf.odt dtest.odt ctest.odt
+ 1877  cd bin
+ 1878  grep version mswf.sh
+ 1879  cd obe
+ 1880  grep version mswf.07.sh
+ 1881  cp mswf.07.sh ../mswf.sh
+ 1882  bin/mswf.sh ozip orig ctest.odt
+ 1883  cd ..
+ 1884  bin/mswf.sh ozip orig ctest.odt
+ 1885  rm -rf ctest.odt 
+ 1886  bin/mswf.sh ozip orig ctest.odt
+ 1887  history | grep end
+ 1888  rm -rf test.pyx test/content.xml ;bin/pycs.sh > test.pyx;bin/mswf.sh tpyx test test.odt test.pyx # end-to-end
+ 1889  ssh -X flint@10.0.1.249
+ 1890  ssh -X flint@10.0.1.250
+ 1891  rm -rf test.pyx test/content.xml ;bin/pycs.sh > test.pyx;bin/mswf.sh tpyx test test.odt test.pyx # end-to-end
+ 1892  gedit bin/pycs.sh &
+ 1893  rm -rf test.pyx test/content.xml ;bin/pycs.sh > test.pyx;bin/mswf.sh tpyx test test.odt test.pyx # end-to-end
+ 1894  kate body1.pyx &
+ 1895  grep Axml:id body1.pyx
+ 1896  grep -v Axml:id body1.pyx > body2.pyx
+ 1897  rm -rf test.pyx test/content.xml ;bin/pycs.sh > test.pyx;bin/mswf.sh tpyx test test.odt test.pyx # end-to-end
+ 1898  grep Atext:style-name  body1.pyx
+ 1899  grep Atext:style-name  body1.pyx | less
+ 1900  grep "Atext:style-name W" body1.pyx | less
+ 1901  grep "Atext:style-name W" body1.pyx
+ 1902  grep -v "Atext:style-name W" body1.pyx > body2.pyx
+ 1903  rm -rf test.pyx test/content.xml ;bin/pycs.sh > test.pyx;bin/mswf.sh tpyx test test.odt test.pyx # end-to-end
+ 1904  history |grep "grep -v"
+ 1905  grep -v Axml:id body.pyx grep -v "Atext:style-name W" body1.pyx > body2.pyx
+ 1906  grep -v Axml:id body.pyx |grep -v "Atext:style-name W" > body2.pyx
+ 1907  rm -rf test.pyx test/content.xml ;bin/pycs.sh > test.pyx;bin/mswf.sh tpyx test test.odt test.pyx # end-to-end
+ 1908  grep -v Axml:id body.pyx  > body2.pyx
+ 1909  rm -rf test.pyx test/content.xml ;bin/pycs.sh > test.pyx;bin/mswf.sh tpyx test test.odt test.pyx # end-to-end
+ 1910  cp body2.pyx body2.pyx 
+ 1911  cp body2.pyx body1.pyx 
+ 1912  rm -rf test.pyx test/content.xml ;bin/pycs.sh > test.pyx;bin/mswf.sh tpyx test test.odt test.pyx # end-to-end
+ 1913  ls ntest.odt 
+ 1914  bin/mswf.sh ozip ntest ntest.odt
+ 1915  ls -alt ntest.odt
+ 1916  libreoffice test.odt
+ 1917  cp test.odt ntest.odt
+ 1918  mv test.odt ntest.odt
+ 1919  rm -rf test.pyx test/content.xml ;bin/pycs.sh > test.pyx;bin/mswf.sh tpyx test test.odt test.pyx # end-to-end
+ 1920  bin/mswf.sh ounzip ntest ntest.odt
+ 1921  bin/mswf.sh val ntest/content.xml 
+ 1922  lt
+ 1923  xmlstarlet pyx ntest/content.xml > ntest.pyx
+ 1924  diff -y test.pyx ntest.pyx | less -N
+ 1925  rm -rf test.pyx test/content.xml ;bin/pycs.sh > test.pyx;bin/mswf.sh tpyx test test.odt ntest.pyx # end-to-end
+ 1926  rm -rf test.pyx test/content.xml ;bin/pycs.sh > test.pyx;bin/mswf.sh tpyx test test.odt test.pyx # end-to-end
+ 1927  rm -rf ntest
+ 1928  bin/mswf.sh ounzip ntest ntest.odt
+ 1929  xmlstarlet pyx ntest/content.xml > ntest.pyx
+ 1930  rm -rf test.pyx test/content.xml ;bin/pycs.sh > test.pyx;bin/mswf.sh tpyx test test.odt ntest.pyx # end-to-end
+ 1931  kate ntest.pyx &
+ 1932  rm -rf test.pyx test/content.xml ;bin/pycs.sh > test.pyx;bin/mswf.sh tpyx test test.odt ntest.pyx # end-to-end
+ 1933  bin/mswf.sh ounzip tntest tntest.odt
+ 1934  kate tntest.pyx &
+ 1935  xmlstarlet pyx tntest/content.xml > tntest.pyx
+ 1936  kate tntest.pyx &
+ 1937  rm -rf test.pyx test/content.xml ;bin/pycs.sh > test.pyx;bin/mswf.sh tpyx test test.odt tntest.pyx # end-to-end
+ 1938  kate body1.pyx 
+ 1939  cp body1.pyx body3.pyx
+ 1940  rm -rf test.pyx test/content.xml ;bin/pycs.sh > test.pyx;bin/mswf.sh tpyx test test.odt tntest.pyx # end-to-end
+ 1941  rm -rf test.pyx test/content.xml ;bin/pycs.sh > test.pyx;bin/mswf.sh tpyx test test.odt test.pyx # end-to-end
+ 1942  grep grader body1.pyx 
+ 1943  rm -rf test.pyx test/content.xml ;bin/pycs.sh > test.pyx;bin/mswf.sh tpyx test test.odt test.pyx # end-to-end
+ 1944  cp body1.pyx bodywt.pyx
+ 1945  rm -rf test.pyx test/content.xml ;bin/pycs.sh > test.pyx;bin/mswf.sh tpyx test test.odt test.pyx # end-to-end
+ 1946  rm -rf test.pyx test/content.xml ;bin/pycs.sh > test.pyx;bin/mswf.sh tpyx test test.odt test.pyx # end-to-end\
+ 1947  nautilus . &
+ 1948  bin/chello.sh dlot
+ 1949  curl -T banana.title http://the:end@docbox.flint.com:1980/banana/tiddlers/SiteTitle
+ 1950  curl -T body.overview http://the:end@docbox.flint.com:1980/Windham/tiddlers/overview
+ 1951  curl -T http://the:end@docbox.flint.com:1980/Windham/tiddlers/overview Windham.overview
+ 1952  curl http://the:end@docbox.flint.com:1980/Windham/tiddlers/overview Windham.overview
+ 1953  curl http://the:end@docbox.flint.com:1980/Windham/tiddlers/overview > Windham.overview
+ 1954  chello dlot
+ 1955  bin/chello.sh dlot
+ 1956  history | grep while
+ 1957  bin/chello.sh dlot
+ 1958  line="#  [[TitlePage]]"
+ 1959  echo $line
+ 1960  echo $line |sed 's/#  [[//g' 
+ 1961  echo $line |sed 's/#  [[//' 
+ 1962  echo $line |sed 's/\#  \[\[//' 
+ 1963  echo $line |sed 's/]]//' 
+ 1964  echo $line |sed 's/]]//' |sed 's/# //'
+ 1965  echo $line |sed 's/]]//' |sed 's/# //' |sed 's/[[//'
+ 1966  echo $line |sed 's/]]//' |sed 's/# //' |sed 's/\[\[//'
+ 1967  bin/chello.sh dlot
+ 1968  echo $line |sed 's/]]//' |sed 's/# //' |sed 's/\[\[//'
+ 1969  bin/chello.sh dlot
+ 1970  lt
+ 1971  libreoffice test.odt 
+ 1972  bin/chello.sh dlot
+ 1973  cd ~/Downloads/
+ 1974  ls
+ 1975  sudo dpkg -i atom-amd64.deb 
+ 1976  atom &
+ 1977  ifconfig eth0
+ 1978  ifconfig -a
+ 1979  sudo poweroff
+ 1980  ssh flint@mail.flint.com
+ 1981  reboot
+ 1982  nautilus . &
+ 1983  sudo apt-get install dconf-tools
+ 1984  dconf-editor
+ 1985  sudo bash
+ 1986  sudo bash
+ 1987  cd grantsmanship/
+ 1988  history > obe/$(date +%F)_history
